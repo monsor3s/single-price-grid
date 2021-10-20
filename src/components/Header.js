@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const Homepage = styled.div`
     width: 1440px;
     height: 1280px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,16 +12,18 @@ const Homepage = styled.div`
 const HomepageContainer = styled.div`
     width: 800px;
     height: 600px;
-    position: absolute;
+    position: relative;
     background-color: var(--lg-gray);
     border-radius: 0.5rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
 
 `;
 
 const HeaderWrap = styled.div`
-    display: flex;
-`;
+    position: absolute;
+    `;
 
 const BoxHeader = styled.div`
     width: 100%;
@@ -56,32 +57,32 @@ const Span = styled.p`
 
 const BoxBody = styled.div`
     width: 50%;
-    height: 50%;
+    height: 100%;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: var(--cyan);
+    grid-area: 2 / 1 ;
 
 `;
 
 const TitleBody = styled.div`
-
+    color: #fff;
 `;
-const PriceBody = styled.p`
 
+const PriceBody = styled.p`
+    color: #fff;
 `;
 
 const SectionBody = styled.p`
-
+    color: var(--lg-gray);
 `;
 
 const TextBody = styled.p`
-
+    color: #fff;
 `;
 
 const Button = styled.button`
-
+    color: #fff;
+    background-color: var(--bg-yellow);
 `;
 
 export const Header = () => {
