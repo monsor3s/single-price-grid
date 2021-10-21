@@ -56,33 +56,57 @@ const Span = styled.p`
 
 
 const BoxBody = styled.div`
-    width: 50%;
-    height: 100%;
+    width: 400px;
+    height: 330px;
     position: absolute;
     background-color: var(--cyan);
     grid-area: 2 / 1 ;
-
 `;
 
 const TitleBody = styled.div`
+    font-size: 1.4rem;
+    font-weight: 700;
     color: #fff;
+    margin-top: 3rem;
+    padding-left: 3rem;
 `;
 
 const PriceBody = styled.p`
+    font-size: 2rem;
+    font-weight: 700;
     color: #fff;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    display: inline-block;
 `;
 
 const SectionBody = styled.p`
+    font-size: 1.2rem;
     color: var(--lg-gray);
+    padding-left: 0.8rem;
+    display: inline-block;
 `;
 
 const TextBody = styled.p`
+    font-size: 1.2rem;
     color: #fff;
+    padding-left: 3rem;
+    padding-top: 1rem;
 `;
 
 const Button = styled.button`
+    width: 285px;
+    height: 60px;
     color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 3rem;
+    margin-top: 2.5rem;
     background-color: var(--bg-yellow);
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-decoration: none;
 `;
 
 export const Header = () => {
