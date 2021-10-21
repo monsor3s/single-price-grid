@@ -7,13 +7,14 @@ const Homepage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--lg-gray);
 `;
 
 const HomepageContainer = styled.div`
     width: 800px;
     height: 600px;
     position: relative;
-    background-color: var(--lg-gray);
+    background-color: #fff;
     border-radius: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
