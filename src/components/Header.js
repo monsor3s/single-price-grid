@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Homepage = styled.div`
-    width: 1440px;
-    height: 1280px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,6 +110,29 @@ const Button = styled.button`
     text-decoration: none;
 `;
 
+const BoxFooter = styled.div`
+    width: 400px;
+    height: 330px;
+    position: absolute;
+    background-color: var(--lg-cyan);
+    grid-area: 2 / 2 ;
+`;
+
+const TitleFooter = styled.h1`
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 3rem;
+    padding-left: 3rem;
+`;
+
+const SectionFooter = styled.p`
+    color: #fff;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    line-height: 0.8rem;
+`;
+
 export const Header = () => {
     return (
     <Homepage>
@@ -129,6 +152,18 @@ export const Header = () => {
                         <TextBody>Full access for less than $1 a day</TextBody>
                         <Button>Sign Up</Button>
                     </BoxBody>
+                <BoxFooter>
+                        <TitleFooter>Why Us</TitleFooter>
+                        <SectionFooter>
+                            Tutorials by industry experts <br/>
+                            Peer &amp; expert code review <br/>
+                            Coding exercises <br/>
+                            Access to our GitHub repos <br/>
+                            Community forum <br/>
+                            Flashcard decks <br/>
+                            New videos every week    
+                        </SectionFooter>
+                </BoxFooter>
             </HeaderWrap>
         </HomepageContainer>
     </Homepage>
