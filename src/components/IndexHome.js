@@ -59,14 +59,15 @@ const Span = styled.p`
 const BoxBody = styled.div`
     width: 400px;
     height: 330px;
-    position: absolute;
+    position: relative;
+    display: inline-block;
     background-color: var(--cyan);
     grid-area: 2 / 1 ;
 `;
 
 const TitleBody = styled.div`
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     margin-top: 3rem;
     padding-left: 3rem;
@@ -100,7 +101,6 @@ const Button = styled.button`
     height: 60px;
     color: #fff;
     font-size: 1.2rem;
-    font-weight: bold;
     margin-left: 3rem;
     margin-top: 2.5rem;
     background-color: var(--bg-yellow);
@@ -114,6 +114,7 @@ const BoxFooter = styled.div`
     width: 400px;
     height: 330px;
     position: absolute;
+    display: inline-block;
     background-color: var(--lg-cyan);
     grid-area: 2 / 2 ;
 `;
@@ -127,13 +128,14 @@ const TitleFooter = styled.h1`
 `;
 
 const SectionFooter = styled.p`
-    color: #fff;
+    font-size: 1rem;
+    color: var(--lg-gray);
     margin-top: 1rem;
     padding-left: 3rem;
-    line-height: 0.8rem;
+    line-height: 1.6rem;
 `;
 
-export const Header = () => {
+export const IndexHome = () => {
     return (
     <Homepage>
         <HomepageContainer>

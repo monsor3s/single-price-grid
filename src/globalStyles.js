@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 
   :root {
-    --lg-cyan: #00CED1;
+    --lg-cyan: #18c2c0;
     --cyan: hsl(179, 62%, 43%);
     --bg-yellow: hsl(71, 73%, 54%);
     --lg-gray: hsl(204, 43%, 93%);
