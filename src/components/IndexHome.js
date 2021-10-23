@@ -8,6 +8,7 @@ const Homepage = styled.div`
     justify-content: center;
     align-items: center;
     background-color: var(--lg-gray);
+    
 `;
 
 const HomepageContainer = styled.div`
@@ -19,11 +20,18 @@ const HomepageContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
-
 `;
 
 const HeaderWrap = styled.div`
     position: absolute;
+    @media screen and (max-width: 375px) {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;      
+        justify-content: space-around;
+        align-items: center;
+    }
     `;
 
 const BoxHeader = styled.div`
@@ -32,7 +40,6 @@ const BoxHeader = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     padding: 3rem;
 `;
 
