@@ -19,19 +19,15 @@ const HomepageContainer = styled.div`
     border-radius: 0.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit 2, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+
 `;
 
 const HeaderWrap = styled.div`
-    position: absolute;
     @media screen and (max-width: 375px) {
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: column;      
-        justify-content: center;
+        width: 70%;
+        height: 70%;
         align-items: center;
-        font-size: 0.5rem;
     }
     `;
 
