@@ -18,7 +18,7 @@ const HomepageContainer = styled.div`
     background-color: #fff;
     border-radius: 0.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit 2, 1fr);
     grid-template-rows: 1fr 1fr;
 `;
 
@@ -29,8 +29,9 @@ const HeaderWrap = styled.div`
         height: auto;
         display: flex;
         flex-direction: column;      
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        font-size: 0.5rem;
     }
     `;
 
