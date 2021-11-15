@@ -137,7 +137,8 @@ const Button = styled.button`
     width: 285px;
     height: 60px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-left: 3rem;
     margin-top: 2.5rem;
     background-color: var(--bg-yellow);
