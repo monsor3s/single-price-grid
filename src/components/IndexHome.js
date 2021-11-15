@@ -56,7 +56,7 @@ const Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
     color: var(--cyan);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     @media only screen and (max-width: 768px) {
         font-size: 2rem;
@@ -66,7 +66,7 @@ const Title = styled.h1`
 const Subtitle = styled.h2`
     font-size: 2rem;
     color: var(--bg-yellow);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 
     @media only screen and (max-width: 768px) {
         font-size: 1.5rem;
@@ -74,9 +74,9 @@ const Subtitle = styled.h2`
 `;
 
 const Span = styled.p`
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--gr-blue);
-    line-height: 2rem;
+    line-height: 3rem;
 
     @media only screen and (max-width: 768px) {
         font-size: 1.2rem;
