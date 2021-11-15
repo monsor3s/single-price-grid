@@ -60,6 +60,7 @@ const Title = styled.h1`
 
     @media only screen and (max-width: 768px) {
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 `;
 
@@ -70,6 +71,7 @@ const Subtitle = styled.h2`
 
     @media only screen and (max-width: 768px) {
         font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 `;
 
@@ -80,6 +82,7 @@ const Span = styled.p`
 
     @media only screen and (max-width: 768px) {
         font-size: 1.2rem;
+        line-height: 2rem;
     }
 `;
 
@@ -162,7 +165,7 @@ const TitleFooter = styled.h1`
     font-size: 1.7rem;
     font-weight: 700;
     color: #fff;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-left: 3rem;
 `;
 
