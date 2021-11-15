@@ -9,19 +9,33 @@ const Homepage = styled.div`
     justify-content: center;
     align-items: center;
     background-color: var(--lg-gray);
-    
 `;
 
 const HomepageContainer = styled.div`
     width: 800px;
     height: 600px;
+    overflow: hidden;
     position: relative;
     background-color: #fff;
     border-radius: 0.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); 
-    
+    grid-template-areas: 
+        'boxheader boxheader'
+        'boxbody boxfooter';
+
+    @media only screen and (max-width: 768px) {
+        width: 340px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'boxheader'
+        'boxbody'
+        'boxfooter';
+    }
 `;
 
 const BoxHeader = styled.div`
@@ -30,7 +44,12 @@ const BoxHeader = styled.div`
     position: absolute;
     justify-content: center;
     padding: 55px;
-    grid-area: 0 / 3 ;
+    grid-area: boxheader;
+
+    @media only screen and (max-width: 768px) {
+        padding: 25px;
+        justify-content: center;
+    }
 `;
 
 const Title = styled.h1`
@@ -38,18 +57,30 @@ const Title = styled.h1`
     font-weight: 700;
     color: var(--cyan);
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
 `;
 
 const Subtitle = styled.h2`
     font-size: 2rem;
     color: var(--bg-yellow);
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
 `;
 
 const Span = styled.p`
     font-size: 1.8rem;
     color: var(--gr-blue);
     line-height: 2rem;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 1.2rem;
+    }
 `;
 
 
@@ -57,10 +88,15 @@ const BoxBody = styled.div`
     width: 400px;
     height: 330px;
     padding: 25px;
-    position: relative;
+    position: absolute;
     display: inline-block;
     background-color: var(--cyan);
-    grid-area: 2 / 1;
+    grid-area: boxbody;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0px;
+
+    }
 `;
 
 const TitleBody = styled.div`
@@ -115,7 +151,11 @@ const BoxFooter = styled.div`
     position: absolute;
     display: inline-block;
     background-color: var(--lg-cyan);
-    grid-area: 2 / 2 ;
+    grid-area: boxfooter;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+    }
 `;
 
 const TitleFooter = styled.h1`
