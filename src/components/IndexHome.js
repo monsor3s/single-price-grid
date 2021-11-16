@@ -24,11 +24,6 @@ const HomepageContainer = styled.div`
 `;
 
 const HeaderWrap = styled.div`
-    @media screen and (max-width: 375px) {
-        width: 70%;
-        height: 70%;
-        align-items: center;
-    }
     `;
 
 const BoxHeader = styled.div`
