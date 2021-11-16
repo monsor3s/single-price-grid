@@ -10,17 +10,12 @@ const GlobalStyle = createGlobalStyle`
     --gr-blue: hsl(218, 22%, 67%);
   }
 
-  #root {
-  width: 100vw;
-  height: 100vh;
-  font-size: 62.5%;
-}
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
+    font-size: 62.5%;
   }
 
 `;
